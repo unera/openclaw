@@ -131,7 +131,7 @@ describe("sendGatewayCronFailureAlert presentation", () => {
         publicOrigin: "https://gateway.example",
         controlUi: { basePath: "/control" },
       },
-      cron: { announce: { inspectLinks: "never" } },
+      cron: { announce: { inspectLinks: "never" as const } },
       expectedText: "cron failed\nRun started: 2026-01-15 10:30 EST",
     },
   ])(
